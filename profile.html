@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <h2>My Profile</h2>
+
+        <form id="profileForm">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    value="John Doe"
+                    readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    value="john@example.com"
+                    readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    value="+91 9876543210"
+                    readonly>
+            </div>
+
+            <div class="btn-group">
+
+                <button
+                    type="button"
+                    id="editBtn"
+                    class="edit-btn"
+                    onclick="toggleEdit()">
+                    Edit Profile
+                </button>
+
+                <button
+                    type="button"
+                    class="logout-btn"
+                    onclick="logout()">
+                    Logout
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>
