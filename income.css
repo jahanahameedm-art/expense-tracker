@@ -465,3 +465,19 @@ tbody td{
     }
 
 }
+/* Back Arrow */
+
+.back-arrow{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.back-arrow:hover{
+    color: #a855f7;
+    transform: translateX(-5px);
+}
