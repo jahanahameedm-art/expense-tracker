@@ -29,6 +29,6 @@ counters.forEach(counter => {
 
 document.getElementById("startBtn").addEventListener("click",()=>{
 
-    alert("Welcome to FinTrack!");
+    window.location.href="login.html";
 
 });
