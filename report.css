@@ -1,0 +1,245 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f0f14;
+    color:#ffffff;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+h1{
+    text-align:center;
+    color:#bb86fc;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+/* ==========================================
+   SUMMARY CARDS
+========================================== */
+
+.summary{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:#1a1a24;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#cccccc;
+    margin-bottom:12px;
+    font-weight:500;
+}
+
+.card p{
+    font-size:30px;
+    font-weight:700;
+    color:#bb86fc;
+}
+
+/* ==========================================
+   CHART SECTION
+========================================== */
+
+.charts-container{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+.chart-box{
+
+    background:#1a1a24;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.chart-box h2{
+
+    text-align:center;
+    color:#bb86fc;
+    margin-bottom:15px;
+
+}
+
+/* Smaller chart size */
+
+.chart-box canvas{
+
+    width:100% !important;
+    height:280px !important;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .charts-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .chart-box canvas{
+
+        height:250px !important;
+
+    }
+
+}
+
+/* ==========================================
+   FINANCIAL STATUS
+========================================== */
+
+.financial-status{
+    background:#1a1a24;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    margin-bottom:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.financial-status h2{
+    color:#bb86fc;
+    margin-bottom:15px;
+}
+
+#percentage{
+    font-size:60px;
+    margin:15px 0;
+}
+
+#status{
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#message{
+    color:#cccccc;
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* ==========================================
+   INSIGHTS
+========================================== */
+
+.insight-box{
+    background:#1a1a24;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+    margin-bottom:35px;
+}
+
+.insight-box h2{
+    color:#bb86fc;
+    margin-bottom:20px;
+}
+
+.insight-box ul{
+    list-style:none;
+}
+
+.insight-box li{
+    padding:12px 0;
+    border-bottom:1px solid #2d2d3d;
+    color:#dddddd;
+    font-size:17px;
+}
+
+.insight-box li:last-child{
+    border:none;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.button-area{
+    text-align:center;
+}
+
+button{
+    background:#8b5cf6;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    font-size:17px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#a855f7;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    #percentage{
+        font-size:45px;
+    }
+
+    #status{
+        font-size:24px;
+    }
+
+    .card p{
+        font-size:24px;
+    }
+
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--=========================================
+        META TAGS
+    ==========================================-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=========================================
+        PAGE TITLE
+    ==========================================-->
+
+    <title>Income | Expense Tracker</title>
+
+    <!--=========================================
+        GOOGLE FONT
+    ==========================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--=========================================
+        CSS FILE
+    ==========================================-->
+
+    <link rel="stylesheet" href="income.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!--=========================================
+        PAGE TITLE
+    ==========================================-->
+
+    <h1 class="page-title">
+        Expense Management
+    </h1>
+
+    <!--=========================================
+        TOTAL INCOME CARD
+    ==========================================-->
+
+    <div class="income-card">
+
+        <h3>Total Expense</h3>
+
+        <h2 id="totalIncome">
+            ₹0
+        </h2>
+
+    </div>
+
+
+    <!--=========================================
+        ADD NEW INCOME
+    ==========================================-->
+
+    <div class="income-form">
+
+        <h2>Add New Expense</h2>
+
+        <div class="form-row">
+
+            <!-- Amount -->
+
+            <div class="form-group">
+
+                <label>Amount</label>
+
+                <input
+                type="number"
+                id="amount"
+                placeholder="Enter Amount">
+
+            </div>
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option>Salary</option>
+
+                    <option>Business</option>
+
+                    <option>Bonus</option>
+
+                    <option>Gift</option>
+
+                    <option>Freelance</option>
+
+                    <option>Interest</option>
+
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+            <!-- Date -->
+
+            <div class="form-group">
+
+                <label>Date</label>
+
+                <input
+                type="date"
+                id="date">
+
+            </div>
+
+            <!-- Description -->
+
+            <div class="form-group description">
+
+                <label>Description</label>
+
+                <input
+                type="text"
+                id="description"
+                placeholder="Enter Description">
+
+            </div>
+
+            <!-- Button -->
+
+            <div class="form-group button">
+
+                <button id="addBtn">
+
+                    Add Expense
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--=========================================
+        Expense HISTORY
+    ==========================================-->
+
+    <div class="table-card">
+
+        <h2>Expense History</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Sl No</th>
+
+                        <th>Amount</th>
+
+                        <th>Category</th>
+
+                        <th>Date</th>
+
+                        <th>Description</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="incomeTable">
+
+                    <!-- JavaScript will add rows here -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--=========================================
+    JAVASCRIPT
+==========================================-->
+
+<script src="income.js"></script>
+
+</body>
+</html>
