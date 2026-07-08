@@ -21,62 +21,18 @@ document.getElementById("balanceValue").innerHTML = "₹ " + balance;
 
 
 
-function addIncome(){
-
-let amount = prompt("Enter income amount");
-
-if(amount){
-
-income += Number(amount);
-
-localStorage.setItem("income",income);
-
-location.reload();
-
+function addIncome() {
+    window.location.href = "income.html";
 }
 
+function addExpense() {
+    window.location.href = "expense.html";
 }
 
-
-
-function addExpense(){
-
-let amount = prompt("Enter expense amount");
-
-if(amount){
-
-expense += Number(amount);
-
-localStorage.setItem("expense",expense);
-
-location.reload();
-
+function addDebt() {
+    window.location.href = "debt.html";
 }
 
-}
-
-
-
-function addDebt(){
-
-let amount = prompt("Enter debt amount");
-
-if(amount){
-
-debt += Number(amount);
-
-localStorage.setItem("debt",debt);
-
-location.reload();
-
-}
-
-}
-
-
-
-function viewBalance(){
-
-alert("Available Balance : ₹ " + balance);
-
+function viewBalance() {
+    window.location.href = "balance.html";
 }

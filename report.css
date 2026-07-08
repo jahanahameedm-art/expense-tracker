@@ -243,3 +243,84 @@ button:hover{
     }
 
 }
+/* ==========================================
+   BOTTOM SECTION
+========================================== */
+
+.bottom-section{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-top:30px;
+
+}
+
+/* Insights */
+
+.insight-box{
+
+    background:#1a1a24;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+/* Financial Health */
+
+.financial-status{
+
+    background:#1a1a24;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.financial-status h2{
+
+    color:#bb86fc;
+    margin-bottom:20px;
+
+}
+
+#percentage{
+
+    font-size:65px;
+    color:#bb86fc;
+    font-weight:bold;
+
+}
+
+#status{
+
+    font-size:35px;
+    margin:20px 0;
+
+}
+
+#message{
+
+    color:#cccccc;
+    line-height:1.7;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.bottom-section{
+
+grid-template-columns:1fr;
+
+}
+
+}
