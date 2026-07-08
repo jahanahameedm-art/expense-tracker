@@ -30,5 +30,5 @@ counters.forEach(counter => {
 document.getElementById("startBtn").addEventListener("click",()=>{
 
     window.location.href="login.html";
-
+// sakjhdashasfk
 });
