@@ -1,0 +1,467 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#0f0f14;
+    color:#ffffff;
+    min-height:100vh;
+    padding:40px 20px;
+
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+
+}
+
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.page-title{
+
+    font-size:34px;
+    font-weight:700;
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================================
+   TOTAL INCOME CARD
+========================================== */
+
+.income-card{
+
+    width:320px;
+    margin:auto;
+    background:#181824;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    border:1px solid #2d2d45;
+
+}
+
+.income-card h3{
+
+    color:#bfbfd4;
+    margin-bottom:12px;
+    font-weight:500;
+
+}
+
+.income-card h2{
+
+    font-size:38px;
+    color:#b84dff;
+    font-weight:700;
+
+}
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.income-form{
+
+    margin-top:45px;
+    background:#181824;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    border:1px solid #2d2d45;
+
+}
+
+.income-form h2{
+
+    text-align:center;
+    margin-bottom:30px;
+
+}
+
+
+/* ==========================================
+   HORIZONTAL FORM
+========================================== */
+
+.form-row{
+
+    display:flex;
+    align-items:end;
+    gap:18px;
+    flex-wrap:wrap;
+
+}
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+    flex:1;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+    color:#d3d3df;
+    font-size:14px;
+
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.form-group input,
+.form-group select{
+
+    height:50px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    padding:0 15px;
+    background:#232334;
+    color:#fff;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border:2px solid #8a2be2;
+
+}
+
+
+/* Description Box */
+
+.description{
+
+    flex:2;
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.button{
+
+    flex:0 0 180px;
+
+}
+
+.button button{
+
+    width:100%;
+    height:50px;
+
+    border:none;
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#7b2ff7,#b84dff);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.button button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(184,77,255,.4);
+
+}
+/* ==========================================
+   INCOME HISTORY TABLE
+========================================== */
+
+.table-card{
+
+    margin-top:40px;
+    background:#181824;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    border:1px solid #2d2d45;
+
+}
+
+.table-card h2{
+
+    text-align:center;
+    margin-bottom:25px;
+
+}
+
+.table-container{
+
+    width:100%;
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px;
+
+}
+
+
+/* ==========================================
+   TABLE HEADER
+========================================== */
+
+thead{
+
+    background:#7b2ff7;
+
+}
+
+thead th{
+
+    padding:16px;
+    text-align:left;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   TABLE BODY
+========================================== */
+
+tbody tr{
+
+    border-bottom:1px solid #2d2d45;
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#222233;
+
+}
+
+tbody td{
+
+    padding:16px;
+    color:#dddddd;
+    font-size:14px;
+
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.edit-btn{
+
+    background:#7b2ff7;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#924dff;
+
+}
+
+.delete-btn{
+
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#ff2d2d;
+
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.table-container::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-container::-webkit-scrollbar-thumb{
+
+    background:#7b2ff7;
+    border-radius:20px;
+
+}
+
+.table-container::-webkit-scrollbar-track{
+
+    background:#232334;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:992px){
+
+    .form-row{
+
+        flex-wrap:wrap;
+
+    }
+
+    .form-group{
+
+        flex:1 1 45%;
+
+    }
+
+    .description{
+
+        flex:1 1 100%;
+
+    }
+
+    .button{
+
+        flex:1 1 100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .page-title{
+
+        font-size:28px;
+
+    }
+
+    .income-card{
+
+        width:100%;
+
+    }
+
+    .form-row{
+
+        flex-direction:column;
+        gap:18px;
+
+    }
+
+    .form-group,
+    .description,
+    .button{
+
+        width:100%;
+
+    }
+
+    .button button{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .income-form,
+    .table-card,
+    .income-card{
+
+        padding:20px;
+
+    }
+
+    .page-title{
+
+        font-size:24px;
+
+    }
+
+    .income-card h2{
+
+        font-size:32px;
+
+    }
+
+    thead th,
+    tbody td{
+
+        padding:12px;
+        font-size:13px;
+
+    }
+
+}

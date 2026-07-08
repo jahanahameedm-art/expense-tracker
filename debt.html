@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Income | Expense Tracker</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="income.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+        <h1 class="page-title">
+            Debt Management
+        </h1>
+
+
+
+        <div class="income-card">
+
+            <h3>Total Debt</h3>
+
+            <h2 id="totalIncome">
+                ₹0
+            </h2>
+
+        </div>
+
+
+
+        <div class="income-form">
+
+            <h2>Add New Debt</h2>
+
+            <div class="form-row">
+
+                <!-- Amount -->
+
+                <div class="form-group">
+
+                    <label>Amount</label>
+
+                    <input type="number" id="amount" placeholder="Enter Amount">
+
+                </div>
+
+                <!-- Category -->
+
+                <div class="form-group">
+
+                    <label>Category</label>
+
+                    <select id="category">
+
+                        <option>Salary</option>
+
+                        <option>Business</option>
+
+                        <option>Bonus</option>
+
+                        <option>Gift</option>
+
+                        <option>Freelance</option>
+
+                        <option>Interest</option>
+
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>Date</label>
+
+                    <input type="date" id="date">
+
+                </div>
+
+
+
+                <div class="form-group description">
+
+                    <label>Description</label>
+
+                    <input type="text" id="description" placeholder="Enter Description">
+
+                </div>
+
+
+
+                <div class="form-group button">
+
+                    <button id="addBtn">
+
+                        Add Debt
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-card">
+
+                <h2>Expense History</h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Sl No</th>
+
+                                <th>Amount</th>
+
+                                <th>Category</th>
+
+                                <th>Date</th>
+
+                                <th>Description</th>
+
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="incomeTable">
+
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="income.js"></script>
+
+</body>
+
+</html>

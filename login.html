@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================
+         Basic Meta Tags
+    =========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker | Login</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Login Container -->
+    <main class="container">
+
+        <!-- Login Card -->
+        <section class="login-card">
+
+            
+
+          
+            <p class="subtitle">
+                Sign in to continue to your Expense Tracker
+            </p>
+
+            <!-- Login Form -->
+            <form>
+
+                <!-- Email -->
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+                <!-- Password -->
+              <div class="input-group">
+
+    <label>Password</label>
+
+    <div class="password-box">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+        >
+
+        <span id="togglePassword">👁</span>
+
+    </div>
+
+</div>
+                <!-- Options -->
+                <div class="options">
+
+                    <label class="remember">
+
+                        <input type="checkbox">
+
+                        <span>Remember Me</span>
+
+                    </label>
+
+                    <a href="#" class="forgot">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+               <button type="submit" class="login-btn">
+    Login
+</button>
+
+            </form>
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <!-- Google Button -->
+            <button class="google-btn">
+
+                <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                alt="Google">
+
+                Continue with Google
+
+            </button>
+
+            <!-- Signup -->
+            <p class="signup">
+
+                Don't have an account?
+
+                <a href="signup.html">Create Account</a>
+
+            </p>
+
+        </section>
+
+    </main>
+<script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monthly Report</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="report.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ===============================
+            PAGE TITLE
+    ================================ -->
+
+    <h1>View Balance</h1>
+
+
+    <!-- ===============================
+            SUMMARY CARDS
+    ================================ -->
+
+    <div class="summary">
+
+        <div class="card">
+            <h3>Total Income</h3>
+            <p id="income">₹50,000</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Expenses</h3>
+            <p id="expense">₹38,000</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Debt</h3>
+            <p id="debt">₹8,000</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Savings</h3>
+            <p id="savings">₹12,000</p>
+        </div>
+
+    </div>
+
+
+    <!-- ===============================
+        CHARTS
+================================ -->
+
+<div class="charts-container">
+
+    <div class="chart-box">
+        <h2>Monthly Savings</h2>
+        <canvas id="savingChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>Income Distribution</h2>
+        <canvas id="pieChart"></canvas>
+    </div>
+
+</div>
+
+
+
+    <!-- ===============================
+            FINANCIAL HEALTH
+    ================================ -->
+
+    <div class="financial-status">
+
+        <h2>Financial Health</h2>
+
+        <h1 id="percentage">0%</h1>
+
+        <h3 id="status"></h3>
+
+        <p id="message">
+            Your monthly financial performance will appear here.
+        </p>
+
+    </div>
+
+
+
+    <!-- ===============================
+            MONTHLY INSIGHTS
+    ================================ -->
+
+    <div class="insight-box">
+
+        <h2>Monthly Insights</h2>
+
+        <ul id="insightList">
+
+            <li>✔ Monthly report generated successfully.</li>
+
+            <li>✔ Keep tracking your expenses.</li>
+
+            <li>✔ Save at least 20% of your income.</li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- ===============================
+            DOWNLOAD REPORT
+    ================================ -->
+
+    <div class="button-area">
+
+        <button id="downloadBtn">
+            Download Report
+        </button>
+
+    </div>
+
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script src="report.js"></script>
+
+</body>
+
+</html>
