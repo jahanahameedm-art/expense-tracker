@@ -35,8 +35,8 @@ form.addEventListener("submit", function (e) {
     const demoPassword = "12345678";
 
     if (emailValue === demoEmail && passwordValue === demoPassword) {
-        alert("Login Successful!");
-        window.location.href = "dashboard.html";
+        
+        window.location.href = "home.html";
     } else {
         alert("Invalid email or password.");
     }

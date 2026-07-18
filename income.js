@@ -1,7 +1,3 @@
-/* ==========================================
-   GET ELEMENTS
-========================================== */
-
 const amount = document.getElementById("amount");
 const category = document.getElementById("category");
 const date = document.getElementById("date");
@@ -11,16 +7,16 @@ const addBtn = document.getElementById("addBtn");
 const table = document.getElementById("incomeTable");
 const totalIncome = document.getElementById("totalIncome");
 
-/* ==========================================
-   VARIABLES
-========================================== */
 
-let incomes = [];
+// Load saved incomes from Local Storage
+let incomes = JSON.parse(localStorage.getItem("incomes")) || [];
+
 let editIndex = -1;
 
-/* ==========================================
-   ADD / UPDATE INCOME
-========================================== */
+
+// Display saved incomes when page loads
+displayIncome();
+
 
 addBtn.addEventListener("click", function () {
 
@@ -56,15 +52,15 @@ addBtn.addEventListener("click", function () {
 
     }
 
+    // Save to Local Storage
+    localStorage.setItem("incomes", JSON.stringify(incomes));
+
     clearForm();
 
     displayIncome();
 
 });
 
-/* ==========================================
-   DISPLAY TABLE
-========================================== */
 
 function displayIncome() {
 
@@ -118,9 +114,6 @@ function displayIncome() {
 
 }
 
-/* ==========================================
-   EDIT
-========================================== */
 
 function editIncome(index) {
 
@@ -138,9 +131,6 @@ function editIncome(index) {
 
 }
 
-/* ==========================================
-   DELETE
-========================================== */
 
 function deleteIncome(index) {
 
@@ -148,15 +138,15 @@ function deleteIncome(index) {
 
         incomes.splice(index, 1);
 
+        // Save updated list
+        localStorage.setItem("incomes", JSON.stringify(incomes));
+
         displayIncome();
 
     }
 
 }
 
-/* ==========================================
-   CLEAR FORM
-========================================== */
 
 function clearForm() {
 
