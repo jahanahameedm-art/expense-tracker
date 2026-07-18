@@ -1,40 +1,53 @@
-let editMode = false;
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
 
-function toggleEdit(){
+window.onload = function(){
 
-    const inputs = document.querySelectorAll("input");
+    const profile = JSON.parse(localStorage.getItem("profile"));
 
-    const button = document.getElementById("editBtn");
+    if(profile){
 
-    if(!editMode){
+        nameInput.value = profile.name;
+        emailInput.value = profile.email;
+        phoneInput.value = profile.phone;
 
-        inputs.forEach(input=>{
-
-            input.removeAttribute("readonly");
-
-        });
-
-        button.textContent="Save Changes";
-
-        editMode=true;
-
+        disableInputs();
     }
 
-    else{
+};
 
-        inputs.forEach(input=>{
+function saveProfile(){
 
-            input.setAttribute("readonly",true);
+    const profile={
 
-        });
+        name:nameInput.value,
+        email:emailInput.value,
+        phone:phoneInput.value
 
-        button.textContent="Edit Profile";
+    };
 
-        editMode=false;
+    localStorage.setItem("profile",JSON.stringify(profile));
 
-        alert("Profile updated successfully!");
+    disableInputs();
 
-    }
+    alert("Profile saved successfully!");
+
+}
+
+function editProfile(){
+
+    nameInput.disabled=false;
+    emailInput.disabled=false;
+    phoneInput.disabled=false;
+
+}
+
+function disableInputs(){
+
+    nameInput.disabled=true;
+    emailInput.disabled=true;
+    phoneInput.disabled=true;
 
 }
 
@@ -42,10 +55,9 @@ function logout(){
 
     if(confirm("Are you sure you want to logout?")){
 
-        alert("Logged out successfully!");
+        localStorage.removeItem("profile");
 
-        // Example:
-        // window.location.href = "login.html";
+        window.location.href="home.html";
 
     }
 

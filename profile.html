@@ -3,72 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Profile</title>
 
     <link rel="stylesheet" href="profile.css">
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
+<div class="profile-container">
 
-    <div class="profile-card">
+    
 <a href="home.html" class="back-arrow">←</a>
-        <h2>My Profile</h2>
+        <h1>My Profile</h1>
+    <div class="profile-card">
 
-        <form id="profileForm">
+        <div class="input-box">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
 
-            <div class="input-group">
-                <label>Full Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    value="John Doe"
-                    readonly>
-            </div>
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
 
-            <div class="input-group">
-                <label>Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    value="john@example.com"
-                    readonly>
-            </div>
+        <div class="input-box">
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
 
-            <div class="input-group">
-                <label>Phone Number</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    value="+91 9876543210"
-                    readonly>
-            </div>
+        <div class="buttons">
 
-            <div class="btn-group">
+            <button onclick="saveProfile()">Save</button>
 
-                <button
-                    type="button"
-                    id="editBtn"
-                    class="edit-btn"
-                    onclick="toggleEdit()">
-                    Edit Profile
-                </button>
+            <button class="edit-btn" onclick="editProfile()">Edit</button>
 
-                <button
-                    type="button"
-                    class="logout-btn"
-                    onclick="logout()">
-                    Logout
-                </button>
+            <button class="logout-btn" onclick="logout()">Logout</button>
 
-            </div>
-
-        </form>
+        </div>
 
     </div>
 
